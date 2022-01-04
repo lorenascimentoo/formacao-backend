@@ -30,13 +30,13 @@ public class CriaConta {
 		primeiraConta.deposita(1000);
 		System.out.println("Olá " + primeiraConta.getTitular().getNome() + ", seu saldo é: " + primeiraConta.getSaldo());
 		
-		if(primeiraConta.transfere(200, segundaConta)) {
+		/*if(primeiraConta.transfere(200, segundaConta)) {
 			System.out.println("Hey " + primeiraConta.getTitular().getNome());
 			System.out.println("Sua transferencia para " + segundaConta.getTitular().getNome() +
 					           " foi realizada com sucesso! Seu novo saldo é: " + primeiraConta.getSaldo());
 		} else {
 			System.out.println("Hey " + primeiraConta.getTitular().getNome() +", seu saldo é insuficiente. :(");
-		}
+		}*/
 		
 		System.out.println(Conta.getTotal());
 		

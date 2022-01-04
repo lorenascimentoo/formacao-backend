@@ -19,7 +19,12 @@ public class TesteContas {
 		ContaPoupanca cp = new ContaPoupanca(222, 222);
 		cp.deposita(200);
 		
-		cc.transfere(10.0, cp);
+		try {
+			cc.transfere(10.0, cp);
+		} catch (SaldoInsuficienteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println("O saldo da conta corrente é: "+ cc.getSaldo());
 		System.out.println("O saldo da conta poupança é: "+ cp.getSaldo());
 		

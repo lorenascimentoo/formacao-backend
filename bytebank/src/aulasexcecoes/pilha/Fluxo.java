@@ -27,7 +27,11 @@ public class Fluxo {
 			System.out.println(i);
 			//int a = i / 0;
 			Conta c = null;
-			c.deposita();
+			try {
+				c.deposita();
+			} catch (MinhaExcecao e) {
+				e.printStackTrace();
+			}
 		}
 		System.out.println("Fim do metodo2");
 	}
