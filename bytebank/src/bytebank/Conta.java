@@ -11,6 +11,12 @@ public abstract class Conta {
 	
 	public Conta(int agencia, int numero) {
 		Conta.total++;
+		if(agencia<1) {
+			throw new IllegalArgumentException("A agência da conta informada é inválida");
+		} else if(numero <1) {
+			throw new IllegalArgumentException("O número da conta informado é inválido");
+		}
+		
 		this.agencia = agencia;
 		this.numero = numero;
 		//this.saldo =100;
