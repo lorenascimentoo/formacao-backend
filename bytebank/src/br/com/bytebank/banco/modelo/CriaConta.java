@@ -1,4 +1,4 @@
-package bytebank;
+package br.com.bytebank.banco.modelo;
 
 import aulasheranca.Cliente;
 
