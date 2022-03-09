@@ -26,6 +26,16 @@ public class TestaListaLigada {
 		
 		lista.removeDoComeco();
 		System.out.println(lista);
+		
+		lista.removeDoFim();
+		System.out.println(lista);
+		
+		lista.remove(2);
+		System.out.println(lista);
+		
+		System.out.println(lista.contem("gabriel"));
+		System.out.println(lista.contem("danilo"));
+		
 	}
 
 }
