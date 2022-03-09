@@ -1,4 +1,4 @@
-package estruturadedados;
+package estruturadedados.vetor;
 
 //abstração da classe aluno
 public class Aluno {
